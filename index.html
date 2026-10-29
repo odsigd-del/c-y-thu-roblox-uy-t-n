@@ -8,3 +8,113 @@
   <p>🔥 Shop Roblox Gaming</p>
 </div>
 ```
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Thắng - Chọn Farm</title>
+
+<style>
+body {
+    background: #0b1020;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+h1 {
+    color: #7c9cff;
+    text-shadow: 0 0 15px #526dff;
+}
+
+.farm-box {
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 20px;
+    background: #151d35;
+    border: 1px solid #536bff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #344bff30;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #4263ff, #9b4dff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #785cff;
+}
+
+#ketqua {
+    margin-top: 25px;
+    padding: 15px;
+    color: #5dffcc;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>⚡ SHOP THẮNG ⚡</h1>
+<h2>🎮 CHỌN DỊCH VỤ FARM ROBLOX</h2>
+
+<div class="farm-box">
+    <h3>🌾 Farm Level</h3>
+    <p>Cày cấp nhân vật</p>
+    <button onclick="chonFarm('Farm Level')">
+        Chọn Farm Level
+    </button>
+</div>
+
+<div class="farm-box">
+    <h3>⚔️ Farm Boss</h3>
+    <p>Hỗ trợ nhiệm vụ boss</p>
+    <button onclick="chonFarm('Farm Boss')">
+        Chọn Farm Boss
+    </button>
+</div>
+
+<div class="farm-box">
+    <h3>💰 Farm Tiền</h3>
+    <p>Cày tiền trong game</p>
+    <button onclick="chonFarm('Farm Tiền')">
+        Chọn Farm Tiền
+    </button>
+</div>
+
+<div class="farm-box">
+    <h3>💎 Farm Vật Phẩm</h3>
+    <p>Farm vật phẩm theo yêu cầu</p>
+    <button onclick="chonFarm('Farm Vật Phẩm')">
+        Chọn Farm Vật Phẩm
+    </button>
+</div>
+
+<div id="ketqua">
+    Vui lòng chọn một dịch vụ farm!
+</div>
+
+<script>
+function chonFarm(tenFarm) {
+    document.getElementById("ketqua").innerHTML =
+        "✅ Bạn đã chọn: " + tenFarm +
+        "<br><br>Liên hệ Shop Thắng để xác nhận đơn!";
+}
+</script>
+
+</body>
+</html>
+```
